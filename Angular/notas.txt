@@ -1,0 +1,37 @@
+la idea de angular es q sea SPA (single page application)
+
+configurando rutas en el app.module.ts
+   importarlo y declararlo en "imports"
+   las rutas se definen como un arreglo tipo JSON
+   dentro del path: ** indica q se redirija hacia una pagina, en caso el usuario haya ingresado una direccion incorrecta
+en app.component.html
+  ya no se usa etiquetas de un componente, si no rutas de angular
+
+en la cabecera.html
+  si se colocaran enlaces (a href) recarga la pagina, para evitar eso angular tiene sus propios atributos routerLink (directiva)
+
+fijarse en la fecha (no cambia el segundero)
+
+/servidores/10/Web/?permitido=true#descripcion
+            params   Query Strings fragmento
+
+---------------------- appRutas02 --------------
+cambio de nombre en areas/listado
+  listado.component.ts -> ListadoAreasComponent para evitar conflicto con el listado de servidores
+  
+app.module.ts -> pathMatch: 'full' relacionado con el routerLink
+
+Servidores
+------------------------
+Listado
+Editar
+Detalle
+
+Servidores (servicio)
+Servidor (modelo -clase-)
+-------------------------
+
+
+Rutas Hijas (appRuts03)
+
+router-outlet  para mostrar las rutas Hijas
